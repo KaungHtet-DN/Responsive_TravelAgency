@@ -1,0 +1,44 @@
+/*Developed by AL SHIFAN SAJIDA BEEVI HUSSAIN*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto ;
+
+}
+
+.hero-section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image{
+    background: url(images\man-standing-on-a-rock.jpg);
+}
+
+.hero-text h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(90, 23, 152);
+}
+
+.hero-btn{
+    background-color: rgb(90, 23, 152);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+
+}
+
+.hero-btn:hover{
+background-color: blueviolet;
+}
