@@ -1,0 +1,145 @@
+
+
+.package-hero {
+    width: 80%;
+    margin: 20px auto;
+    background-image: url(../images/package-hero-unsplash.jpg);
+    height: 30vh; /* Sets the height to 100% of the viewport */
+    background-size: cover; /* Scales the image to cover the entire area */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    display: flex; /* For centering content within the hero section */
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.package-hero > h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+    color: #fcbf63;
+    z-index: 2;
+}
+
+
+#package-container {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 550px 550px;
+    gap: 50px;
+}
+
+.package {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo {
+    width: 50%; 
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.photo > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.information {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-color: #f0f0f0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.information > h3 {
+    padding-top: 20px;
+    font-size: 2em;
+    color: orange;
+    text-align: center;
+}
+
+.information > p {
+    padding: 0 20px;
+}
+
+.package-bottom {
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    background-color: #0d4b8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.package-bottom:hover {
+    background-color: orange;
+}
+
+.package-bottom > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.package-poster {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 250px;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.package-contact {
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+#package-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.package {
+    flex-direction: column;
+    align-content: flex-start;
+    gap:0;
+    height: auto;
+}
+
+.photo {
+    width: 100%; 
+    height: 100px;
+}
+
+.photo > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.information {
+    width: 100%;
+}
+.information > h3 {
+    font-size: 1em;
+}
+}
