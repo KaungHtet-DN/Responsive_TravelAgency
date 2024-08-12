@@ -58,11 +58,7 @@ header {
 }
 
 .btn {
-<<<<<<< HEAD
-  background-color: rgb(246, 94, 39);
-=======
   background-color: rgb(90, 23, 152);
->>>>>>> c1a088c7889c14c3c8faed47a37ca17821f5a4a0
   color: white;
   padding: 10px 20px;
   border: none;
@@ -93,10 +89,6 @@ header {
 }
 
 .btn:hover {
-<<<<<<< HEAD
-  background-color: rgb(90, 23, 152);
-
-=======
   background-color: orange;
 }
 
@@ -171,7 +163,6 @@ footer {
 
 .footer-copyright {
   text-align: center;
->>>>>>> c1a088c7889c14c3c8faed47a37ca17821f5a4a0
 }
 
 @media (max-width: 760px) {
