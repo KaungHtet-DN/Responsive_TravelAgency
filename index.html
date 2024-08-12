@@ -10,7 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+      integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -28,7 +34,29 @@
       </nav>
     </header>
     <main>
-      <h1>Home Page</h1>
+      <div class="hero">
+        <h1>
+          Travel to the any <br />
+          corner of the world
+        </h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ab
+          sapiente magnam!
+        </p>
+        <div class="hero-form">
+          <form>
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+              <option value="switzerland">Switzerland</option>
+              <option value="bali">Bali</option>
+              <option value="japan">Japan</option>
+              <option value="india">India</option>
+              <option value="canada">Canada</option>
+            </select>
+            <button class="explore" href="package.html">Explore</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>&copy; 2024 Copyright - Group Project</footer>
   </body>
