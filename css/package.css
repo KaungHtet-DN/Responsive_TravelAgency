@@ -4,11 +4,11 @@
     width: 80%;
     margin: 20px auto;
     background-image: url(../images/package-hero-unsplash.jpg);
-    height: 30vh; /* Sets the height to 100% of the viewport */
-    background-size: cover; /* Scales the image to cover the entire area */
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents image repetition */
-    display: flex; /* For centering content within the hero section */
+    height: 30vh; 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    display: flex; 
     align-items: center;
     justify-content: center;
     opacity: 0.8;

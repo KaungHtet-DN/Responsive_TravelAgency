@@ -24,7 +24,7 @@ header {
 }
 
 .nav-icon {
-  margin:auto 100px;
+  margin: auto 100px;
 }
 
 .nav-icon img {
@@ -64,26 +64,25 @@ footer {
 }
 
 .btn {
-  background-color: rgb(90, 23, 152);
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    text-decoration: none;
+  background-color: orange;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
 }
 
 .btn:hover {
-  background-color: orange;
+  background-color: rgb(90, 23, 152);
 }
 
 @media (max-width: 760px) {
-
   .navbar {
-   height: auto;
-   flex-direction: column;
-   align-content: start;
+    height: auto;
+    flex-direction: column;
+    align-content: start;
   }
 
   .nav-menu {
