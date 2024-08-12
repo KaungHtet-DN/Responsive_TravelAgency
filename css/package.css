@@ -115,13 +115,16 @@
     justify-content: center;
     align-items: center;
     color:#f0f0f0;
+    line-height: 1.5;
 }
 
 .package-contact {
     text-align: center;
 }
 
-
+.package-contact a{
+    margin-top: 25px;
+}
 
 @media (max-width: 760px) {
 #package-container {
