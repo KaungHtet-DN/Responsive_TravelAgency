@@ -63,6 +63,7 @@ header {
 
 .btn {
   background-color: rgb(246, 94, 39);
+  background-color: rgb(90, 23, 152);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -94,6 +95,7 @@ header {
 
 .btn:hover {
   background-color: rgb(90, 23, 152);
+  background-color: orange;
 }
 
 footer {

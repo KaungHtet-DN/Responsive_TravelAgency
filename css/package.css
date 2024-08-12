@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .package-hero {
     width: 100vw;
     height: 80vh;
@@ -25,10 +20,6 @@
     margin-top: 0px;
     color: #f1efec;
     z-index: 2;
-}
-
-.package-hero h1, .package-hero h2{
-    line-height: 1.5;
 }
 
 #package-container {
@@ -73,9 +64,12 @@
 
 .information > h3 {
     font-size: 2em;
-    margin-top: 10px;
     color: orange;
     text-align: center;
+}
+
+.information > h3:hover {
+    font-size: 2.1em;
 }
 
 .information {
