@@ -39,10 +39,8 @@ body{
     font-size: 2rem;
 }
 
-.hero-btn{
+.btn{
     margin-top: 50px;
-    background-color: rgb(90, 23, 152);
-    color: white;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
@@ -53,5 +51,67 @@ body{
 }
 
 .hero-btn:hover{
-background-color: blueviolet;
+background-color: #c1491d;
+}
+
+
+.container{
+    width: auto;
+    height: fit-content;
+    margin: auto 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.fac-card{
+    width: 100%;
+    height: 250px;
+    border: 1px solid grey;
+    border-radius: 16px;
+    padding: 20px;
+
+}
+
+.card-icon{
+    padding: 16px;
+    margin: 16px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.facilities-heading{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.section2{
+    margin-top: 50px;
+    color: white;
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(../images/man-standing-on-a-rock.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2 h1{
+    position: relative;
+    width: 500px;
 }
