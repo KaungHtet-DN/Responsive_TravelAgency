@@ -64,7 +64,7 @@ footer {
 }
 
 .btn {
-  background-color: orange;
+  background-color: rgb(246, 94, 39);
   color: white;
   padding: 8px 16px;
   border: none;
@@ -72,10 +72,12 @@ footer {
   font-weight: 600;
   font-size: 1.1rem;
   text-decoration: none;
+  transition: all ease 0.3s;
 }
 
 .btn:hover {
   background-color: rgb(90, 23, 152);
+
 }
 
 @media (max-width: 760px) {

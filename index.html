@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
     <link
@@ -35,26 +35,52 @@
     </header>
     <main>
       <div class="hero">
-        <h1>
-          Travel to the any <br />
-          corner of the world
-        </h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ab
-          sapiente magnam!
-        </p>
-        <div class="hero-form">
-          <form>
-            <label for="destination">Destination</label>
-            <select id="destination" name="destination" required>
-              <option value="switzerland">Switzerland</option>
-              <option value="bali">Bali</option>
-              <option value="japan">Japan</option>
-              <option value="india">India</option>
-              <option value="canada">Canada</option>
-            </select>
-            <button class="explore" href="package.html">Explore</button>
-          </form>
+        <video autoplay muted loop id="background-video">
+          <source src="./images/home.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+          <h1>
+            <span class="highlight">Travel</span> to the any <br />
+            corner of the world
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+            Faucibus commodo mattis vitae facilisi vel aliquam porttitor
+            viverra.
+          </p>
+          <div class="search-bar">
+            <div class="input-group">
+              <label for="destination">Destination</label>
+              <select id="destination">
+                <option value="switzerland">Switzerland</option>
+                <option value="bali">Bali</option>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+                <option value="japan">Japan</option>
+                <option value="sweden">Sweden</option>
+                <option value="us">USA</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" value="2021-09-10" />
+            </div>
+            <div class="input-group">
+              <label for="price">Price Range</label>
+              <select id="price">
+                <option value="$1000-$2500">$1000-$1200</option>
+                <option value="$1000-$2500">$1000-$1500</option>
+                <option value="$1000-$2500">$1000-$1700</option>
+                <option value="$1000-$2500">$1000-$2000</option>
+                <option value="$1000-$2500">$1000-$2500</option>
+              </select>
+            </div>
+            <button class="btn">
+              Discover
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </div>
       </div>
     </main>
