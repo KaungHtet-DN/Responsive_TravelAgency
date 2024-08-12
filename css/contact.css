@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.contact-section {
+  width: 80%;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-info {
+  flex: 1 1 40%;
+  max-width: 40%;
+}
+
+.contact-info h2,
+.contact-info h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  color: #777;
+}
+
+.map {
+  margin-top: 20px;
+}
+
+.contact-form {
+  flex: 1 1 55%;
+  max-width: 55%;
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.phone-group {
+  margin-bottom: 20px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.phone-input select {
+  max-width: 25%;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.phone-input input[type="tel"] {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+}
+

@@ -1,27 +1,26 @@
-
-
 .package-hero {
-    width: 80%;
-    margin: 20px auto;
-    background-image: url(../images/package-hero-unsplash.jpg);
-    height: 30vh; /* Sets the height to 100% of the viewport */
-    background-size: cover; /* Scales the image to cover the entire area */
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents image repetition */
-    display: flex; /* For centering content within the hero section */
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0.8;
+    background-image: linear-gradient(rgba(48, 46, 46, 0.8), rgba(0, 0, 0, 0.5)), url(../images/package-hero-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
 }
 
 .package-hero > h1 {
     font-size: 50px;
     text-align: center;
     margin-top: 0px;
-    color: #fcbf63;
+    color: #f1efec;
     z-index: 2;
 }
-
 
 #package-container {
     width: 60%;
@@ -64,13 +63,16 @@
 }
 
 .information > h3 {
-    padding-top: 20px;
     font-size: 2em;
     color: orange;
     text-align: center;
 }
 
-.information > p {
+.information > h3:hover {
+    font-size: 2.1em;
+}
+
+.information {
     padding: 0 20px;
 }
 
@@ -81,7 +83,7 @@
     left: 0;
     right: 0;
     padding: 0;
-    background-color: #0d4b8a;
+    background-color: rgb(90, 23, 152);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,14 +104,20 @@
     margin-bottom: 20px;
     width: 100%;
     height: 250px;
-    background-color: azure;
+    background-color: #216573;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#f0f0f0;
+    line-height: 1.5;
 }
 
 .package-contact {
     text-align: center;
+}
+
+.package-contact a{
+    margin-top: 25px;
 }
 
 @media (max-width: 760px) {
