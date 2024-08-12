@@ -103,10 +103,11 @@
     margin-bottom: 20px;
     width: 100%;
     height: 250px;
-    background-color: azure;
+    background-color: #216573;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#f0f0f0;
 }
 
 .package-contact {
