@@ -5,12 +5,12 @@ body {
   line-height: 1.5em;
   color: #000;
   display: grid;
-  grid-template-rows: auto auto 300px;
+  grid-template-rows: auto auto auto;
 }
 
 header {
   width: 100%;
-  background-color: #333;
+  background-color: #002E47;
 }
 
 .navbar {
@@ -57,16 +57,14 @@ header {
   font-size: 26px;
 }
 
-footer {
-  background-color: #333;
-  color: aliceblue;
-  text-align: center;
-}
-
 .btn {
+<<<<<<< HEAD
   background-color: rgb(246, 94, 39);
+=======
+  background-color: rgb(90, 23, 152);
+>>>>>>> c1a088c7889c14c3c8faed47a37ca17821f5a4a0
   color: white;
-  padding: 8px 16px;
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   font-weight: 600;
@@ -75,9 +73,105 @@ footer {
   transition: all ease 0.3s;
 }
 
+#backToTop {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  text-align: center;
+  background-color: rgba(0,0,0,.4);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.company-name {
+  font-size: larger;
+  color: orange;
+}
+
 .btn:hover {
+<<<<<<< HEAD
   background-color: rgb(90, 23, 152);
 
+=======
+  background-color: orange;
+}
+
+footer {
+  background-color: #002E47;
+  color: aliceblue;
+}
+
+.footer-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-text {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.footer-p-md {
+  font-size: medium;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 45%;
+}
+
+.footer-column > ul {
+  list-style-type: disc;
+}
+
+.companyinfo > ul {
+  list-style-type: none;
+}
+
+.footer-p-capital > ul > li {
+  padding-bottom: 10px;
+}
+
+.footer-column > ul > li > a {
+  text-decoration: none;
+  color:aliceblue;
+}
+
+.footer-column > ul > li > a:hover {
+  color:grey;
+}
+
+.footer-p-capital > ul > li > a {
+  text-transform: capitalize;
+}
+
+.social-icon {
+  padding-top: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.social-icon > p {
+  font-size: 20px;
+}
+
+.social-icon > a {
+  color:aliceblue;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  text-align: center;
+>>>>>>> c1a088c7889c14c3c8faed47a37ca17821f5a4a0
 }
 
 @media (max-width: 760px) {
@@ -89,5 +183,13 @@ footer {
 
   .nav-menu {
     flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    flex-basis: 100%;
   }
 }

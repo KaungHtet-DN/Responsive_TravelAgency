@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .package-hero {
     width: 100vw;
@@ -24,6 +27,9 @@
     z-index: 2;
 }
 
+.package-hero h1, .package-hero h2{
+    line-height: 1.5;
+}
 
 #package-container {
     width: 60%;
@@ -67,6 +73,7 @@
 
 .information > h3 {
     font-size: 2em;
+    margin-top: 10px;
     color: orange;
     text-align: center;
 }
