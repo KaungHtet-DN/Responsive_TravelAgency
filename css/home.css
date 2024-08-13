@@ -355,7 +355,6 @@ html {
 
 
 main {
-  display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   grid-template-areas: 
@@ -396,17 +395,49 @@ main {
 #mixed-content-1 {
   grid-area: content-1;
   height: 500px;
-  background-color: darkcyan;
+  background-color: rgb(255, 253, 222);
 }
 
 #mixed-content-2 {
   grid-area: content-2;
   height: 500px;
-  background-color: cadetblue;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/About\ background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #home-footer-content{
   grid-area: footer-content;
+}
+
+
+main .mixed-container {
+  margin-top: 30px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  height:450px;
+}
+
+main .mixed-container div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  color: rgb(0, 0, 0);
+}
+main .mixed-container div h1{
+  padding-top: 30px;
+  color: #dd5826;
+}
+
+main #mixed-content-1 p{
+  width: 100%;
+}
+main #mixed-content-1 button{
+  width: 180px;
 }
 
 
@@ -447,5 +478,36 @@ main {
     text-align: center;
     margin: 0 auto;
   }
+  
+  #mixed-content-1,
+  #mixed-content-2 {
+    height: 700px;
+    padding: 10px;
+    background-size: cover;
+  }
+
+  main .mixed-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+main .mixed-container div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 30px;
+    height: 500px;
+}
+
+main .mixed-container div h1 {
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+main .mixed-container div p {
+    font-size: 1em;
+}
+
 
 }
