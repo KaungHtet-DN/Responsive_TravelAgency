@@ -6,80 +6,138 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header id="main">
       <nav class="navbar">
-        <img src="./images/logo/Wayfarer-02.svg" alt="Icon" width="auto" height="50px"/>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="package.html">Packages</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-      <div class="nav-btn">
-        <button type="button" class="btn">SignUp</button>
-        <button type="button" class="btn">Login</button>
-      </div>
-    </nav>
-
-    <section class="hero-section">
-      <div class="hero-image">
-        <div class="hero-text">
-          <h1> Travel Beyond the Horizons</h1>
-          <button type="button" class="btn">Explore More</button>
+        <img
+          src="./images/logo/Wayfarer-02.svg"
+          alt="Icon"
+          width="auto"
+          height="50px"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="package.html">Packages</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-btn">
+          <button type="button" class="btn">SignUp</button>
+          <button type="button" class="btn">Login</button>
         </div>
-      </div>
+      </nav>
 
-    </section>
+      <section class="hero">
+        <div class="hero-image">
+          <video id="background-video" autoplay loop muted>
+            <source src="./images/home.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1><strong>Travel</strong> to any corner of the world</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              commodo mattis vitae facilisi vel aliquam porttitor viverra.
+            </p>
+            <div class="search-bar">
+              <div class="input-group">
+                <label for="destination">Destination</label>
+                <select id="destination">
+                  <option value="switzerland">Switzerland</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" value="2021-09-10" />
+              </div>
+              <div class="input-group">
+                <label for="price-range">Price Range</label>
+                <select id="price-range">
+                  <option value="$1000-$2500">$1000-$2500</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <button class="btn" type="button">Discover</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
+
     <main>
       <h1>Home Page</h1>
     </main>
+
     <footer>
       <div class="footer-wrapper">
         <h2 class="footer-text">WHO WE ARE</h2>
-        <p class="footer-text footer-p-md">Your one-stop shop for seamless travel experiences. Let us handle the details while you create memories.</p> <br>
+        <p class="footer-text footer-p-md">
+          Your one-stop shop for seamless travel experiences. Let us handle the
+          details while you create memories.
+        </p>
+        <br />
         <div class="footer-container">
-           <div class="footer-column footer-p-capital">
+          <div class="footer-column footer-p-capital">
             <ul>
               <li><a href="about.html">About Us</a></li>
               <li><a href="contact.html">Contact Us</a></li>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Legal Terms & Policies</a></li>
             </ul>
-           
           </div>
           <div class="footer-column companyinfo">
             <ul>
-              <li><b>Wafyfarer Inc.</b></li>
-              <li><i class="fa-solid fa-location-dot"></i> 96 Max Becker Dr, Kitchener, Ontario, Canada</li>
+              <li><b>Wayfarer Inc.</b></li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> 96 Max Becker Dr,
+                Kitchener, Ontario, Canada
+              </li>
               <li><i class="fa-solid fa-phone"></i> +123 456 7890</li>
               <li><i class="fa-regular fa-envelope"></i> info@wayfarer.com</li>
             </ul>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="social-icon">
           <p>Follow Us</p>
-          <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a> 
-          <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
-          <a href="https://www.snapchat.com" target="_blank"><i class="fa-brands fa-snapchat"></i></a> 
-          <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a> 
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.snapchat.com" target="_blank"
+            ><i class="fa-brands fa-snapchat"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </div>
-        <br>
-        <div class="footer-copyright">
-          &copy; Group 3. All rights reserved.
-        </div>
+        <br />
+        <div class="footer-copyright">&copy; Group 3. All rights reserved.</div>
       </div>
-       <!-- All images in this page are reference from www.unsplash.com -->
+      <!-- All images in this page are reference from www.unsplash.com -->
     </footer>
   </body>
 </html>
