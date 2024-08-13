@@ -1,29 +1,48 @@
 /*Developed by AL SHIFAN SAJIDA BEEVI HUSSAIN*/
 
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: Roboto ;
+    font-family: Roboto;
 
 }
 
 /* Change Header Bg Here*/
-#facilities{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(../images/man-standing-on-a-rock.jpg);
+#facilities {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../images/man-standing-on-a-rock.jpg);
     background-size: cover;
     background-position: center;
-  }
-  
-  .hero-subtitles{
-    padding: 20px;
-  }
+}
 
-  section div{
+.hero-subtitles {
+    padding-top: 20px;
+    padding-top: 20px;
+}
+
+section div {
     align-items: center;
     text-align: center;
-  }
+}
 
-  .container{
+.heading-text {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.heading-text h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dd5826;
+    padding-bottom: 10px;
+}
+
+.heading-text p {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container {
     width: auto;
     height: fit-content;
     margin: auto 200px;
@@ -33,56 +52,70 @@ body{
     justify-content: center;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     gap: 20px;
 }
-/* 
 
-
-
-.fac-card{
+.fac-card {
+    background-color: white;
     width: 100%;
     height: 250px;
-    border: 1px solid grey;
+    border: 0.1px solid rgb(247, 247, 247);
     border-radius: 16px;
     padding: 20px;
-
+    box-shadow: 2px 2px 4px rgb(94, 94, 94, 0.2);
 }
 
-.card-icon{
-    padding: 16px;
-    margin: 16px;
-    background-color: aquamarine;
-    border-radius: 50px;
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    justify-content: center;
+.fac-card:hover {
+    box-shadow: 2px 2px 4px rgba(129, 129, 129, 0.527);
+    transform: translateY(-5px);
+    transition: 0.2s;
+    filter:saturate(200%);
 }
 
-.facilities-heading{
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
+.card-icon {
+    color: #dd5826;
+    font-size: 3.5rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
+
+.fac-card p {
+    padding-top: 10px;
+}
+
 
 .section2{
     margin-top: 50px;
-    color: white;
-    position: relative;
-    width: 100vw;
     height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(../images/man-standing-on-a-rock.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(../images/fac-second.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.section2 h1{
-    position: relative;
-    width: 500px;
-} */
+.section2 div h1{
+    font-size: 2rem;
+    color: white;
+}
+
+.section2 div p{
+    padding-top: 10px;
+    padding-bottom: 60px;
+    width: 700px;
+    color: white;
+}
+
+.section2 div button{
+    padding: 10px 32px;
+}
+
+.section2 div button a{
+    color: white;
+    text-decoration: none;
+}
