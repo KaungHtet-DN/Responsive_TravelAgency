@@ -119,3 +119,56 @@ section div {
     color: white;
     text-decoration: none;
 }
+
+/* Responsive Design for 768px*/
+@media (max-width: 768px) {
+    .hero-image {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .heading-text p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container {
+        flex-direction: column;
+        margin: auto 20px;
+        margin: 0 auto;
+    }
+
+    .fac-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section2 div p {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column ul {
+        margin-bottom: 20px;
+    }
+
+    .footer-container ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-container ul li i {
+        margin-right: 10px;
+    }
+}
