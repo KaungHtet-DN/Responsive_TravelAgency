@@ -454,6 +454,9 @@ main #mixed-content-1 button{
       "content-2"
       "footer-content";
   }
+  .search-bar{
+    display: none;
+  }
 
   #home-hero {
     grid-template-columns: 1fr;
