@@ -150,6 +150,7 @@ html {
 }
 
 .intro-section {
+  grid-area: intro-section;
   width: 100%;
   margin: 0 auto;
   font-family: Arial, sans-serif;
@@ -210,14 +211,12 @@ html {
 }
 
 main {
+  display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: 
-    "hero hero"
+  grid-template-rows: auto auto;
+  grid-template-areas:
     "content-1 content-2"
-    "footer-content footer-content";
-  gap: 20px;
-  margin: 20px 0;
+    "intro-section intro-section";
 }
 
 #home-hero {
@@ -252,43 +251,33 @@ main {
 #mixed-content-1 {
   padding: 30px;
   grid-area: content-1;
-  height: 440px;
+  height: auto;
   background-color: rgb(255, 253, 222);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:20px;
+}
+
+#mixed-content-1 h1{
+  color: #ff6c37;
+}
+#mixed-content-2{
+  width: 100%;
+  height: auto;
+
 }
 
 #mixed-content-2 img{
   grid-area: content-2;
-  height: 500px;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 #home-footer-content{
   grid-area: footer-content;
-}
-
-
-main .mixed-container {
-  margin-top: 30px;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 0px;
-  height: 500px;
-  margin-bottom: 30px;
-}
-
-main .mixed-container div {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  color: rgb(0, 0, 0);
-}
-
-main .mixed-container div h1{
-  padding-top: 30px;
-  color: #dd5826;
 }
 
 main #mixed-content-1 p{
@@ -297,6 +286,7 @@ main #mixed-content-1 p{
 main #mixed-content-1 button{
   width: 180px;
 }
+
 
 
 @media (max-width: 760px) { 
