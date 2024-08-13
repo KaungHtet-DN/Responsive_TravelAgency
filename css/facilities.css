@@ -143,6 +143,7 @@ section div {
     .container {
         flex-direction: column;
         margin: auto 20px;
+        margin: 0 auto;
     }
 
     .fac-card {
