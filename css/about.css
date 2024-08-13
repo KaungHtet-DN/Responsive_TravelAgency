@@ -108,6 +108,10 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.founder_info img:hover{
+  filter: drop-shadow(2px 2px 20px #e08900);
+}
+
 .founder_info h3 {
   margin-top: 15px;
   font-size: 1.5rem;
