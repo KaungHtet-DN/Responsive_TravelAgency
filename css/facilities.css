@@ -120,6 +120,8 @@ section div {
     text-decoration: none;
 }
 
+
+
 /* Responsive Design for 768px*/
 @media (max-width: 768px) {
     .hero-image {
@@ -170,5 +172,26 @@ section div {
 
     .footer-container ul li i {
         margin-right: 10px;
+    }
+}
+
+
+
+/* Responsive Styles for Max Width 480px */
+@media only screen and (max-width: 480px) {
+    .heading-text p {
+        width: 90%;
+    }
+
+    .container {
+        margin: 20px 10px;
+    }
+
+    .section2 div p {
+        width: 90%;
+    }
+
+    .card-icon {
+        font-size: 2.5rem;
     }
 }
