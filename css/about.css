@@ -3,8 +3,9 @@ html {
 }
 
 /* Change Header Bg Here*/
-#about{
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(../images/About\ background.jpg);
+#about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(../images/About\ background.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -15,9 +16,9 @@ html {
   line-height: 1.6;
 }
 
-.hero-section .hero-image .hero-text button a{
-   text-decoration: none;
-   color: white;
+.hero-section .hero-image .hero-text button a {
+  text-decoration: none;
+  color: white;
 }
 .about-section {
   width: 100%;
@@ -85,21 +86,18 @@ html {
   width: 90%;
   max-width: 1200px;
   margin: 50px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 10px;
+  text-align: center;
 }
 
 .founder_info {
-  text-align: center;
-  max-width: 220px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
   padding: 20px;
-  flex: 1 1 200px;
 }
 
 .founder_info img {
@@ -171,13 +169,12 @@ html {
     font-size: 1rem;
   }
 
-  .founders {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .founder_info {
-    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -193,6 +190,14 @@ html {
   .btn-learn-more {
     width: auto;
     font-size: 0.9rem;
+  }
+
+  .founder_info {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
   }
 
   .footer-container {
