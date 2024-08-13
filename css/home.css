@@ -148,3 +148,55 @@ html {
   margin-left: 10px; 
   font-size: 18px;
 }
+
+
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "hero hero"
+    "content-1 content-2"
+    "footer-content footer-content";
+  gap: 20px;
+  margin: 20px 0;
+}
+
+#home-hero {
+  grid-area: hero;
+  height: 500px;
+  background-color: aquamarine;
+}
+
+#mixed-content-1 {
+  grid-area: content-1;
+  height: 500px;
+  background-color: darkcyan;
+}
+
+#mixed-content-2 {
+  grid-area: content-2;
+  height: 500px;
+  background-color: cadetblue;
+}
+
+#home-footer-content{
+  grid-area: footer-content;
+  height: 500px;
+  background-color: blanchedalmond;
+}
+
+
+@media (max-width: 760px) { 
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+      "hero"
+      "content-1"
+      "content-2"
+      "footer-content";
+  }
+
+}

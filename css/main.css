@@ -227,4 +227,12 @@ footer {
   .footer-column {
     flex-basis: 100%;
   }
+
+  .footer-wrapper > hr {
+    margin-top: 10px;
+  }
+
+  .footer-column > ul {
+    text-align: center;
+  }
 }
