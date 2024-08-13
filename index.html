@@ -1,127 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/home.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <body>
+    <header id="main">
+      <nav class="navbar">
+        <img
+          src="./images/logo/Wayfarer-02.svg"
+          alt="Icon"
+          width="auto"
+          height="50px"
+        />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="package.html">Packages</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-btn">
+          <button type="button" class="btn">SignUp</button>
+          <button type="button" class="btn">Login</button>
+        </div>
+      </nav>
 
-<body>
-  <header id="main">
-    <nav class="navbar">
-      <img src="./images/logo/Wayfarer-02.svg" alt="Icon" width="auto" height="50px" />
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="package.html">Packages</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-      <div class="nav-btn">
-        <button type="button" class="btn">SignUp</button>
-        <button type="button" class="btn">Login</button>
-      </div>
-    </nav>
-
-    <section class="hero">
-      <div class="hero-image">
-        <video id="background-video" autoplay loop muted>
-          <source src="./images/home.mp4" type="video/mp4" />
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <h1><strong>Travel</strong> to any corner of the world</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-            commodo mattis vitae facilisi vel aliquam porttitor viverra.
-          </p>
-          <div class="search-bar">
-            <div class="input-group">
-              <label for="destination">Destination&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                  class="fa-solid fa-location-dot"></i></label>
-              <select id="destination">
-                <option value="switzerland">Switzerland</option>
-                <option value="canada">Canada</option>
-                <option value="india">India</option>
-                <option value="bali">Bali</option>
-                <option value="japan">Japan</option>
-              </select>
+      <section class="hero">
+        <div class="hero-image">
+          <video id="background-video" autoplay loop muted>
+            <source src="./images/home.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1><strong>Travel</strong> to any corner of the world</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              commodo mattis vitae facilisi vel aliquam porttitor viverra.
+            </p>
+            <div class="search-bar">
+              <div class="input-group">
+                <label for="destination"
+                  >Destination&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-location-dot"
+                  ></i
+                ></label>
+                <select id="destination">
+                  <option value="switzerland">Switzerland</option>
+                  <option value="canada">Canada</option>
+                  <option value="india">India</option>
+                  <option value="bali">Bali</option>
+                  <option value="japan">Japan</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" value="2021-09-10" />
+              </div>
+              <div class="input-group">
+                <label for="price-range"
+                  >Price Range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-dollar-sign"
+                  ></i
+                ></label>
+                <select id="price-range">
+                  <option value="$1000-$2500">$1000-$1100</option>
+                  <option value="$1000-$2500">$1000-$1500</option>
+                  <option value="$1000-$2500">$1000-$2000</option>
+                  <option value="$1000-$2500">$1000-$2500</option>
+                </select>
+              </div>
+              <button class="btn" type="button">
+                <a
+                  href="./package.html"
+                  style="text-decoration: none; color: white"
+                  >Discover</a
+                >
+              </button>
             </div>
-            <div class="input-group">
-              <label for="date">Date</label>
-              <input type="date" id="date" value="2021-09-10" />
-            </div>
-            <div class="input-group">
-              <label for="price-range">Price Range&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
-                  class="fa-solid fa-dollar-sign"></i></label>
-              <select id="price-range">
-                <option value="$1000-$2500">$1000-$1100</option>
-                <option value="$1000-$2500">$1000-$1500</option>
-                <option value="$1000-$2500">$1000-$2000</option>
-                <option value="$1000-$2500">$1000-$2500</option>
-              </select>
-
-            </div>
-            <button class="btn" type="button">
-              <a href="./package.html" style="text-decoration: none; color: white">Discover</a>
-            </button>
           </div>
         </div>
-      </div>
-    </section>
-  </header>
-  <main>
-    
-    <section>
-      <div class="mixed-container">
-        <div id="mixed-content-1">
-          <h1>TRAVEL WITH SOMEONE YOU TRUST</h1>
-          <p>Wayfarer Travels established in the year 2024, is synonymous in Canada for Coach Tours and Customized
-            tours. It is accepted by all Nationalised and
-            non-Nationalised Institutions for availing L.T.C./L.F.C. facility. Our dynamic team has in- depth knowledge
-            of
-            the colorful and vibrant provinces and attarctions of Canada, the Far East, the Middle East and European
-            Cities and many more making
-            sure our guests have an experience of a life time.
-            <br>
-            <br>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div class="mixed-container">
+          <div id="mixed-content-1">
+            <h1>TRAVEL WITH SOMEONE YOU TRUST</h1>
+            <p>
+              Wayfarer Travels established in the year 2024, is synonymous in
+              Canada for Coach Tours and Customized tours. It is accepted by all
+              Nationalised and non-Nationalised Institutions for availing
+              L.T.C./L.F.C. facility. Our dynamic team has in- depth knowledge
+              of the colorful and vibrant provinces and attarctions of Canada,
+              the Far East, the Middle East and European Cities and many more
+              making sure our guests have an experience of a life time.
+              <br />
+              <br />
 
-            So much more is included in your holiday prices with Wayfarer Travels. We use our skills to buy the best
-            service
-            for your money. So you may look forward to a great holiday along with excellent standard of service.
-          </p>
-          <a href="about.html"><button type="button" class="btn">Know more about us</button></a>
-        </div>
-        <div id="mixed-content-2">
-          <img src="./images/bridge.jpg" alt="mixed content">
-        </div>
-      </div>
-    </section>
-      <section id="home-footer-content">
-        <div class="video-header">
-          <video autoplay muted loop class="background-video">
-            <source src="./images/home-2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div class="overlay-video">
-            <h2>★ New Packages coming soon ★</h2>
+              So much more is included in your holiday prices with Wayfarer
+              Travels. We use our skills to buy the best service for your money.
+              So you may look forward to a great holiday along with excellent
+              standard of service.
+            </p>
+            <a href="about.html"
+              ><button type="button" class="btn">Know more about us</button></a
+            >
+          </div>
+          <div id="mixed-content-2">
+            <img src="./images/bridge.jpg" alt="mixed content" />
           </div>
         </div>
       </section>
       <!-- video and testimonials -->
       <section class="intro-section">
-
-
         <div class="testimonials-section">
           <h2>What Travelers Are Saying</h2>
           <p>
@@ -169,54 +183,59 @@
         </div>
       </section>
       <a href="#" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+    </main>
 
-  </main>
-
-
-  <footer>
-    <div class="footer-wrapper">
-      <h2 class="footer-text">WHO WE ARE</h2>
-      <p class="footer-text footer-p-md">
-        Your one-stop shop for seamless travel experiences. Let us handle the
-        details while you create memories.
-      </p>
-      <br />
-      <div class="footer-container">
-        <div class="footer-column footer-p-capital">
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Legal Terms & Policies</a></li>
-          </ul>
+    <footer>
+      <div class="footer-wrapper">
+        <h2 class="footer-text">WHO WE ARE</h2>
+        <p class="footer-text footer-p-md">
+          Your one-stop shop for seamless travel experiences. Let us handle the
+          details while you create memories.
+        </p>
+        <br />
+        <div class="footer-container">
+          <div class="footer-column footer-p-capital">
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Legal Terms & Policies</a></li>
+            </ul>
+          </div>
+          <div class="footer-column companyinfo">
+            <ul>
+              <li>
+                <span class="company-name"><b>Wayfarer Inc.</b></span>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> 96 Max Becker Dr,
+                Kitchener, Ontario, Canada
+              </li>
+              <li><i class="fa-solid fa-phone"></i> +123 456 7890</li>
+              <li><i class="fa-regular fa-envelope"></i> info@wayfarer.com</li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-column companyinfo">
-          <ul>
-            <li>
-              <span class="company-name"><b>Wayfarer Inc.</b></span>
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot"></i> 96 Max Becker Dr,
-              Kitchener, Ontario, Canada
-            </li>
-            <li><i class="fa-solid fa-phone"></i> +123 456 7890</li>
-            <li><i class="fa-regular fa-envelope"></i> info@wayfarer.com</li>
-          </ul>
+        <hr />
+        <div class="social-icon">
+          <p>Follow Us</p>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.snapchat.com" target="_blank"
+            ><i class="fa-brands fa-snapchat"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </div>
+        <br />
+        <div class="footer-copyright">&copy; Group 3. All rights reserved.</div>
       </div>
-      <hr />
-      <div class="social-icon">
-        <p>Follow Us</p>
-        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.snapchat.com" target="_blank"><i class="fa-brands fa-snapchat"></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-      </div>
-      <br />
-      <div class="footer-copyright">&copy; Group 3. All rights reserved.</div>
-    </div>
-    <!-- All images in this page are reference from www.unsplash.com -->
-  </footer>
-</body>
-
+      <!-- All images in this page are reference from www.unsplash.com -->
+    </footer>
+  </body>
 </html>
