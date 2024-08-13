@@ -133,7 +133,7 @@ footer {
 
 .company-name {
   font-size: larger;
-  color: orange;
+  color: #FF6C37;
 }
 
 footer {
@@ -163,6 +163,11 @@ footer {
 .footer-column {
   flex-basis: 45%;
   line-height: 1.5em;
+}
+
+.footer-column > ul {
+  list-style-type:none;
+  text-align: left;
 }
 
 .footer-p-capital > ul > li {
@@ -201,6 +206,10 @@ footer {
 .social-icon > a {
   color:aliceblue;
   text-decoration: none;
+}
+
+.social-icon > a:hover {
+  color: #FF6C37;
 }
 
 .footer-copyright {
