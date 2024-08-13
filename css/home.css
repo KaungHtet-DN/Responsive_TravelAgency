@@ -383,13 +383,15 @@ main {
 
 .home-hero-picture  > h1 {
   margin: 0 auto;
+  padding:100px 200px;
+  font-size: 2em;
   line-height: 2.5;
-  text-align: center;
+  text-align: left;
   color: #fff;
 }
 
 .home-hero-picture  > a {
-  margin-left: 500px;
+  margin-left: 400px;
 }
 
 #mixed-content-1 {
