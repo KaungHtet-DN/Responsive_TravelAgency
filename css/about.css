@@ -15,6 +15,10 @@ html {
   line-height: 1.6;
 }
 
+.hero-section .hero-image .hero-text button a{
+   text-decoration: none;
+   color: white;
+}
 .about-section {
   width: 100%;
   height: 80vh;
