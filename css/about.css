@@ -108,8 +108,10 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.founder_info img:hover{
+.founder_info img:hover {
   filter: drop-shadow(2px 2px 20px #e08900);
+  transform: translateY(-5px);
+  transition: 0.2s;
 }
 
 .founder_info h3 {
