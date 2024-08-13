@@ -221,33 +221,43 @@ main {
 }
 
 #content-p1 {
+  margin-top: 20px;
+  margin-right: 5px;
   grid-area: content-row1; /* Assign this area to the first column */
-  padding: 30px;
+  background-image: linear-gradient(rgba(48, 46, 46, 0.8), rgba(0, 0, 0, 0.5)), url(../images/Mixed1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content-p1 h1, #content-p2 h1 {
+  color: #f9f9f9;
+}
+
+#content-p2 {
+  margin-top: 20px;
+  margin-left: 5px;
+  grid-area: content-row2; /* Assign this area to the first column */
   background-color: rgb(255, 253, 222); /* Optional background color */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically */
-}
-
-#content-p1 {
-  grid-area: content-row2; /* Assign this area to the second column */
+  background-image: linear-gradient(rgba(48, 46, 46, 0.8), rgba(0, 0, 0, 0.5)), url(../images/Mixed2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
-
-#content-p2 img {
-  width: 100%; /* Make image responsive */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Additional areas based on your grid-template-areas */
-#content-row1 {
-  grid-area: content-row1;
-}
-
-#content-row2 {
-  grid-area: content-row2;
+  align-items: center;
 }
 
 #intro-section {
@@ -285,6 +295,7 @@ main {
 
 #mixed-content-1 {
   padding: 30px;
+
   grid-area: content-1;
   height: auto;
   background-color: rgb(255, 253, 222);
@@ -318,8 +329,8 @@ main {
 main #mixed-content-1 p{
   width: 100%;
 }
-main #mixed-content-1 button{
-  width: 180px;
+main #mixed-content-1 a{
+  margin: 0 auto;
 }
 
 
