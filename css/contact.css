@@ -10,6 +10,12 @@ body {
   background-size: cover;
   background-position: center;
 }
+.hero-text p{
+  font-size: 1.25rem;
+  margin: 30px;
+  padding: 15px;
+}
+
 
 .contact-section {
   width: 80%;
