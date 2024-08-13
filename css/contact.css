@@ -11,9 +11,10 @@ body {
   background-position: center;
 }
 .hero-text p{
-  font-size: 1.25rem;
-  margin: 30px;
-  padding: 15px;
+  font-size: 1.125rem;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 
