@@ -369,7 +369,31 @@ main {
 #home-hero {
   grid-area: hero;
   height: 500px;
-  background-color: aquamarine;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.home-hero-picture {
+  background-image: linear-gradient(rgba(48, 46, 46, 0.8), rgba(0, 0, 0, 0.5)), url(../images/home-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.home-hero-picture  > h1 {
+  font-size: 2em;
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-bottom: 40px;
+  z-index: 2;
+  text-align: left;
+  color: #fff;
+}
+
+.home-hero-picture  > a {
+  margin-left: 500px;
 }
 
 #mixed-content-1 {
@@ -386,8 +410,6 @@ main {
 
 #home-footer-content{
   grid-area: footer-content;
-  height: 500px;
-  background-color: blanchedalmond;
 }
 
 
@@ -401,6 +423,32 @@ main {
       "content-1"
       "content-2"
       "footer-content";
+  }
+
+  #home-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-hero-picture > img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+  }
+
+  .home-hero-picture  > h1 { 
+    text-align: center;
+    text-wrap: pretty;
+    padding: 100px 20px;
+    margin: 0 auto;
+  }
+
+  .home-hero-picture  > a { 
+    text-align: center;
+    margin: 0 auto;
   }
 
 }
