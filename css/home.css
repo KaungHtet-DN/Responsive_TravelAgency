@@ -238,6 +238,12 @@ main {
 
 #content-p1 h1, #content-p2 h1 {
   color: #f9f9f9;
+  margin-bottom: 10px;
+}
+
+#content-p1 p, #content-p2 p {
+  color: #f9f9f9;
+  margin-bottom: 10px;
 }
 
 #content-p2 {
@@ -295,7 +301,6 @@ main {
 
 #mixed-content-1 {
   padding: 30px;
-
   grid-area: content-1;
   height: auto;
   background-color: rgb(255, 253, 222);
@@ -311,7 +316,6 @@ main {
 #mixed-content-2{
   width: 100%;
   height: auto;
-
 }
 
 #mixed-content-2 img{
@@ -333,52 +337,31 @@ main #mixed-content-1 a{
   margin: 0 auto;
 }
 
-
-
 @media (max-width: 760px) { 
   main {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: 
-      "hero"
       "content-1"
       "content-2"
-      "footer-content";
+      "content-row1"
+      "content-row2"
+      "intro-section";
   }
+
   .search-bar{
     display: none;
   }
 
-  #home-hero {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .home-hero-picture > img {
-    width: 100%;
-    height: 400px;
-    object-fit: contain;
-  }
-
-  .home-hero-picture  > h1 { 
-    text-align: center;
-    text-wrap: pretty;
-    padding: 100px 20px;
-    margin: 0 auto;
-  }
-
-    .home-hero-picture  > a { 
-      text-align: center;
-    margin: 0 auto;
-  }
-  
   main section .mixed-container{
     display: flex;
     flex-direction: column;
   }
+
+  #mixed-content-1,  #mixed-content-2, #content-p1, #content-p2, .intro-section{
+    width: 100%;
+  }
+
+
 
 }
