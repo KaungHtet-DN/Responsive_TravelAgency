@@ -213,10 +213,45 @@ html {
 main {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
     "content-1 content-2"
+    "content-row1 content-row2"
     "intro-section intro-section";
+}
+
+#content-p1 {
+  grid-area: content-row1; /* Assign this area to the first column */
+  padding: 30px;
+  background-color: rgb(255, 253, 222); /* Optional background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+#content-p1 {
+  grid-area: content-row2; /* Assign this area to the second column */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-p2 img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional areas based on your grid-template-areas */
+#content-row1 {
+  grid-area: content-row1;
+}
+
+#content-row2 {
+  grid-area: content-row2;
+}
+
+#intro-section {
+  grid-area: intro-section;
 }
 
 #home-hero {
